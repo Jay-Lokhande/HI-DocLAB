@@ -21,8 +21,8 @@ import { useState } from 'react'
 // }
 
 const Dashboard = () => {
-//   const [currentlyDeletingFile, setCurrentlyDeletingFile] =
-    // useState<string | null>(null)
+  const [currentlyDeletingFile, setCurrentlyDeletingFile] =
+    useState<string | null>(null)
 
   const utils = trpc.useContext()
 
@@ -34,12 +34,12 @@ const Dashboard = () => {
       onSuccess: () => {
         utils.getUserFiles.invalidate()
       },
-    //   onMutate({ id }) {
-    //     setCurrentlyDeletingFile(id)
-    //   },
-    //   onSettled() {
-    //     setCurrentlyDeletingFile(null)
-    //   },
+      onMutate({ id }) {
+        setCurrentlyDeletingFile(id)
+      },
+      onSettled() {
+        setCurrentlyDeletingFile(null)
+      },
     })
 
   return (
@@ -49,7 +49,7 @@ const Dashboard = () => {
           My Files
         </h1>
 
-        {/* <UploadButton isSubscribed={subscriptionPlan.isSubscribed} /> */}
+        <UploadButton  />
       </div>
 
       {/* display all user files */}
@@ -101,11 +101,11 @@ const Dashboard = () => {
                     size='sm'
                     className='w-full'
                     variant='destructive'>
-                    {/* {currentlyDeletingFile === file.id ? (
+                    {currentlyDeletingFile === file.id ? (
                       <Loader2 className='h-4 w-4 animate-spin' />
                     ) : (
                       <Trash className='h-4 w-4' />
-                    )} */}
+                    )}
                   </Button>
                 </div>
               </li>
