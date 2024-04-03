@@ -1,3 +1,4 @@
+//importing next 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     webpack: (
