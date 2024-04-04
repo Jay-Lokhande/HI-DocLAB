@@ -16,9 +16,7 @@ import { Button } from './ui/button'
 import { useState } from 'react'
 // import { getUserSubscriptionPlan } from '@/lib/stripe'
 
-// interface PageProps {
-//   subscriptionPlan: Awaited<ReturnType<typeof getUserSubscriptionPlan>>
-// }
+
 
 const Dashboard = () => {
   const [currentlyDeletingFile, setCurrentlyDeletingFile] =
@@ -52,7 +50,7 @@ const Dashboard = () => {
         <UploadButton  />
       </div>
 
-      {/* display all user files */}
+      {/* display all the user files */}
       {files && files?.length !== 0 ? (
         <ul className='mt-8 grid grid-cols-1 gap-6 divide-y divide-zinc-200 md:grid-cols-2 lg:grid-cols-3'>
           {files
