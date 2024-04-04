@@ -18,7 +18,7 @@ const Navbar = () => {
 
                 
 
-                {/* todo: add mobile navbar */}
+                {/* todo: add the mobile navbar */}
                  <div className='hidden items-center space-x-4 sm:flex'>
                     <>
 
