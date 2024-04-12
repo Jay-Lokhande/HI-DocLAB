@@ -86,6 +86,13 @@ const Navbar = async () => {
 
 
           <div className='hidden items-center space-x-4 sm:flex'>
+
+                                <Link href='/documentation' className={buttonVariants({
+                        variant: "ghost",
+                        size: 'sm',
+                    })}>
+                        Documentation
+                        </Link>
             {!user ? (
               <>
                 <Link
