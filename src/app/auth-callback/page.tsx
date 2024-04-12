@@ -24,7 +24,6 @@ const Page = () => {
   }, [isLoading, error, origin, router]);
 
   return (
-<Suspense fallback={<div>Loading...</div>}>
 
     <div className="w-full mt-24 flex justify-center">
       <div className="flex flex-col items-center gap-2">
@@ -35,7 +34,6 @@ const Page = () => {
         <p>You will be redirected automatically.</p>
       </div>
     </div>
-      </Suspense>
 
   );
 };
