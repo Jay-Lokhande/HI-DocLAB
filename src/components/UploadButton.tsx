@@ -159,11 +159,12 @@ const UploadDropzone = ({
   )
 }
 
-const UploadButton = ({
+/*const UploadButton = ({
   isSubscribed,
 }: {
   isSubscribed: boolean
-}) => {
+}) => {*/
+  const UploadButton = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
 
   return (
