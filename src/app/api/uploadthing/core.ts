@@ -11,7 +11,7 @@ import {
 
 import { SupabaseVectorStore } from "@langchain/community/vectorstores/supabase";
 import { createClient } from '@supabase/supabase-js'
-import { run } from "@/lib/quickstart";
+//import { run } from "@/lib/quickstart";
 const f = createUploadthing();
 
 export const ourFileRouter = {
