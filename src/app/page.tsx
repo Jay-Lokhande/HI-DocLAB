@@ -16,7 +16,7 @@ export default function Home() {
       Interact with your   <span className="text-purple-600">documents</span> instantly through chat.
       </h1>
       <p className="mt-5 max-w-prose text-zinc-700 sm:text-lg">
-      HI-DocLAB enables you to engage in conversations with any PDF document. Just upload your file, and you can start asking questions immediately.      </p>
+      <em>HI-D</em>od<em>LAB</em> enables you to engage in conversations with any PDF document. Just upload your file, and you can start asking questions immediately.      </p>
       <Link className={buttonVariants({
         size: 'lg',
         className: 'mt-5',
@@ -68,7 +68,7 @@ export default function Home() {
                 Start chatting in minutes
                 </h2>
                 <p className="mt-4 text-lg text-gray-600">
-                  Chatting to your PDF files has never been easier than with Hadlib.
+                  Chatting to your PDF files has never been easier than with <em>HI-D</em>od<em>LAB</em>.
                 </p>
             </div>
           </div>
@@ -95,7 +95,7 @@ export default function Home() {
                 <span className="text-sm font-medium text-blue-600">Step 3</span>
                 <span className="text-xl font-semibold">Start asking questions</span>
                 <span className="mt-2 text-zinc-700">
-                  It&apos;s that simple. Try out Hadlib today - it really takes less than a minute.
+                  It&apos;s that simple. Try out <em>HI-D</em>od<em>LAB</em> today - it really takes less than a minute.
                 </span>
             </div>
           </li>
