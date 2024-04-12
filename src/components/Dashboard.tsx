@@ -20,7 +20,8 @@ interface PageProps {
   subscriptionPlan: Awaited<ReturnType<typeof getUserSubscriptionPlan>>
 }
 
-const Dashboard = ({subscriptionPlan}: PageProps) => {
+// const Dashboard = ({subscriptionPlan}: PageProps) => {
+const Dashboard = () => {
   const [currentlyDeletingFile, setCurrentlyDeletingFile] =
     useState<string | null>(null)
 
