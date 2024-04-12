@@ -185,7 +185,8 @@ const UploadDropzone = (
       </DialogTrigger>
 
       <DialogContent>
-        <UploadDropzone isSubscribed={isSubscribed} />
+{/*         <UploadDropzone isSubscribed={isSubscribed} /> */}
+        <UploadDropzone />
       </DialogContent>
     </Dialog>
   )
