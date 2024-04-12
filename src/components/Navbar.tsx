@@ -89,7 +89,7 @@ const Navbar = async () => {
             {!user ? (
               <>
                 <Link
-                  href='/pricing'
+                  href='dashboard/pricing'
                   className={buttonVariants({
                     variant: 'ghost',
                     size: 'sm',
