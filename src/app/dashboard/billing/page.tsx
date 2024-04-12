@@ -8,4 +8,4 @@ const Page = async () => {
     return (<div>Billing Form</div>)
 }
 
-//export default Page*/
+export default Page
