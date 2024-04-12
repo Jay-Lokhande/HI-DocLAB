@@ -81,7 +81,7 @@ const Navbar = async () => {
           <Link
             href='/'
             className='flex z-40 font-semibold'>
-            <span>quill.</span>
+            <span><em>HI-D</em>oc<em>LAB</em></span>
           </Link>
 
 
