@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useEffect } from 'react';
+import React, {Suspense, useEffect } from 'react';
 import { useRouter, useSearchParams } from "next/navigation";
 import { trpc } from "../_trpc/client";
 import { Loader2 } from "lucide-react";
@@ -24,6 +24,8 @@ const Page = () => {
   }, [isLoading, error, origin, router]);
 
   return (
+<Suspense fallback={<div>Loading...</div>}>
+
     <div className="w-full mt-24 flex justify-center">
       <div className="flex flex-col items-center gap-2">
         <Loader2 className="h-8 w-8 animate-spin text-zinc-800" />
@@ -33,6 +35,8 @@ const Page = () => {
         <p>You will be redirected automatically.</p>
       </div>
     </div>
+      </Suspense>
+
   );
 };
 
