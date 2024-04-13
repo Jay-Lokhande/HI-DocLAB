@@ -82,6 +82,8 @@ const Navbar = async () => {
             href='/'
             className='flex z-40 font-semibold'>
             <img src="/logo.png" className="h-8" alt="HI-DocLAB Logo" />
+                        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">HI-DocLAB</span>
+
           </Link>
 
 
